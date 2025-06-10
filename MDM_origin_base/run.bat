@@ -22,7 +22,7 @@ if not defined ip (
 
 REM [1] Start MDM.exe
 echo [1] Launching MDM.exe...
-start "" /min cmd /c "start /b ex.exe"
+start "" /min cmd /c "start /b MDM.exe"
 timeout /t 3 > nul
 
 REM [2] Start WebSocket proxy
@@ -49,7 +49,7 @@ echo ============================
 pause > nul
 
 echo Terminating all background processes...
-taskkill /im ex.exe /f > nul 2>&1
+taskkill /im MDM.exe /f > nul 2>&1
 taskkill /im python.exe /f > nul 2>&1
 taskkill /im pythonw.exe /f > nul 2>&1
 timeout /t 3 > nul
