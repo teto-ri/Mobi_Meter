@@ -1,0 +1,8 @@
+# WebSocket 서버 라이브러리
+websockets>=11.0.0
+
+# 네트워크 패킷 캡처 라이브러리
+scapy>=2.5.0
+
+# Brotli 압축 해제 라이브러리
+brotli>=1.0.9
