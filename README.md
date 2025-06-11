@@ -2,6 +2,9 @@
 
 ## 소개
 
+![image](https://github.com/user-attachments/assets/52f894e4-95d7-4929-9f9d-48c23be37148)
+
+
 본 프로젝트는 커뮤니티에서 공개된 원본 데미지 로그 분석기(https://github.com/MabinogiMeter/MDM/releases/tag/v1.0.0), (https://github.com/pblyat/MabinogiTools/tree/main/DamageMeter) 를 기반으로
 
 MDM_origin_base는 비공식 로그 분석기를 프록시 중계로 확장해, 원본 분석기에 편리하게 분석 가능한 인터페이스를 추가한 버전입니다.
@@ -33,11 +36,11 @@ Decomplie_new_base는 위 분석기들을 참고하여 디컴파일 및 실행�
 
 - Decomplie_new_base
 
-  최대한 MDM미터기의 출력과 유사하도록 복원된 코드 버전입니다.
+  최대한 MDM미터기의 출력과 유사하게 복원한 버전입니다. MDM툴과 약간의 패킷 해석 차이가 있으며,
 
-  
+  스킬 해석 방법 중 스킬 이펙트 표시를 위해 미리 도착한 패킷으로 시전에 시간이 걸리는 스킬 분석의 탐지율을 올린 것이 특징입니다.  
 
-  윈도우 환경이 아닌, 여러 곳에서 위와 같은 기능을 수행합니다.
+  출력은 위와 동일하되, 여러 속성 데미지 플래그가 추가되었으며 위와 같은 시각화 기능을 수행합니다.
 
 
 ## 가상화 테스트 환경
@@ -148,13 +151,6 @@ Decomplie_new_base는 위 분석기들을 참고하여 디컴파일 및 실행�
 
 ---
 
-## 🛠️ 의존성
-
-- `scapy`
-- `websockets`
-- `brotli`
-
-
 ### 패킷 예시
 
 #### 원시 데이터 (16진수)
@@ -242,17 +238,26 @@ timestamp | used_by | target | skill_name | skill_id | damage | crit_flag | addh
 
 ---
 
+## 🛠️ 의존성
+
+- `scapy`
+- `websockets`
+- `brotli`
+
 ### 주의
 - 단순 분석 도구라도 **게임사 정책에 따라 제재**될 수 있으며, 본 코드는 **학습 목적의 구조 분석 참고용**입니다.
 - 게임사의 **이용약관을 위반할 수 있는 환경**에서는 사용을 자제해주시길 바랍니다.
 
-
+---
 
 ## 🖥️ 웹 기반 실시간 전투 시각화 도구
 
 해당 프론트엔드는 툴에서 WebSocket으로 전송되는 전투 로그를 실시간 수신하여, 시각적이고 직관적인 방식으로 **전투 데이터를 분석, 정리, 공유**할 수 있도록 설계되었습니다.
 
 ---
+
+![image](https://github.com/user-attachments/assets/76855de4-c77f-48c4-bf98-05613c79275e)
+
 
 ### 📌 주요 기능 요약
 
