@@ -2,7 +2,6 @@
 
 ## 소개
 
-![MabinogiMobile_2025061202045188](https://github.com/user-attachments/assets/9671b862-fa85-40f3-8dfe-445b004373d0)
 ![image](https://github.com/user-attachments/assets/52f894e4-95d7-4929-9f9d-48c23be37148)
 
 본 프로젝트는 커뮤니티에서 공개된 원본 데미지 로그 분석기(https://github.com/MabinogiMeter/MDM/releases/tag/v1.0.0), (https://github.com/pblyat/MabinogiTools/tree/main/DamageMeter) 를 기반으로
